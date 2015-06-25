@@ -1,3 +1,88 @@
 *, *::before, *::after {
   box-sizing: border-box; /* simplifies many things */
+  font-family: Arial, sans-serif;
+}
+
+footer ul, li, a.ico-gapps, a.ico-notif, a.ico-user {
+  display: inline-block;
+}
+
+li {  
+  list-style: none;
+}
+
+nav {
+  text-align: right;
+  font-size: 13px;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li a, a.ico-gapps, a.ico-notif, a.ico-user {
+  line-height: 32px;
+  color: #000;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+a.ico-gapps, a.ico-notif {
+  position: relative;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  opacity: .55;
+}
+
+a.ico-gapps:hover, a.ico-notif:hover {
+  opacity: 1;
+}
+
+a.ico-gapps {
+  background: url('../img/gapps.png') no-repeat 50% 50%;
+}
+
+a.ico-notif {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: #000 url('../img/bell.png') no-repeat 50% 50%;
+}
+
+a.ico-user {
+  width: 32px;
+  height: 32px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: url('../img/user.png') no-repeat;
+}
+
+.logo, .search {  
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  width: 296px;
+  height: 95px;
+  background: url('../img/logo.png') no-repeat;
+  background-size: 296px 95px;
+}
+
+footer {
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 13px;
+}
+
+footer > ul:nth-child(2) {
+  float: right;
 }
